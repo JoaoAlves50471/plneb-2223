@@ -1,0 +1,1 @@
+Resolução do exercício do dicionário começado na aula e alterações da estética do ficheiro HTML criado.
