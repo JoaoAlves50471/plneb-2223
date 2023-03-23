@@ -17,10 +17,10 @@ for linha in livro_text.splitlines():
     for palavra in re.findall(r"\b.+?\b", palavras):
         if palavra.lower() in termos:
             link = dicionario.get(palavra.lower())
-            linha = re.sub(palavra, f'<a href="{link}" title="{palavra}">{palavra}</a>',linha)
+            linha = re.sub(palavra, f'<a href title="{link}">{palavra}</a>',linha)
         elif palavra in termos:
             link = dicionario.get(palavra)
-            linha = re.sub(palavra, f'<a href="{link}" title="{palavra}">{palavra}</a>',linha)
+            linha = re.sub(palavra, f'<a href title="{link}">{palavra}</a>',linha)
     html_texto += linha + "\n"
 
 with open("LIVRO-Doenças-do-Aparelho-Digestivos.html","w", encoding="utf-8") as file_html:
