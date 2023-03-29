@@ -14,7 +14,9 @@ html_texto = ""
 
 for linha in livro_text.splitlines():
     palavras = re.sub(r"<.+?>", " ", linha)
-    for palavra in re.findall(r"\b.+?\b", palavras):
+    l=re.findall(r"\b[\w-]+\b", palavras)
+    print(l)
+    for palavra in l:
         if palavra.lower() in termos:
             link = dicionario.get(palavra.lower())
             linha = re.sub(palavra, f'<a href title="{link}">{palavra}</a>',linha)
