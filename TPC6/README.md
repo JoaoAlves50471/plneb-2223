@@ -1,0 +1,1 @@
+Resolução do TPC6 que consistiu em através do Flask construir um site acerca de Elefantes, Engenheiros e Éguas.

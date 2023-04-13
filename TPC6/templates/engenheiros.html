@@ -1,0 +1,89 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<html>
+<head>
+	<title>Engenheiros</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-image: url("../static/Image/background.jpg");
+			background-repeat: no-repeat;
+            background-size: cover;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 30px;
+		}
+
+		.container {
+			max-width: 900px;
+			margin: 0 auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 50px;
+		}
+
+		.image {
+			width: 200px;
+			height: 200px;
+			background-size: cover;
+			background-position: center;
+			margin-bottom: 20px;
+			border-radius: 5px;
+            border: 10px solid #D47006;
+		    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+		}
+
+		.signature {
+			text-align: center;
+			font-style: italic;
+			color: #888;
+		}
+        
+        .button {
+            display: block;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #B0B0B0;
+        }
+	</style>
+</head>
+<body>
+	<h1>Engenheiros desenhados pela IA</h1>
+
+	<div class="container">
+		<div class="image" style="background-image: url('../static/Image/EngenheirosDali.png');"></div>
+		<div class="signature">DALL·E 2 by Salvador Dalí</div>
+
+		<div class="image" style="background-image: url('../static/Image/EngenheirosKhalo.png');"></div>
+		<div class="signature">DALL·E 2 by Frida Kahlo</div>
+
+		<div class="image" style="background-image: url('../static/Image/EngenheirosPicasso.png');"></div>
+		<div class="signature">DALL·E 2 by Pablo Picasso</div>
+
+		<div class="image" style="background-image: url('../static/Image/EngenheirosVan.png');"></div>
+		<div class="signature">DALL·E 2 by Van Gogh</div>
+	</div>
+    <a href="/" class="button">Home</a>
+</body>
+</html>
+
+{% endblock %}
+
