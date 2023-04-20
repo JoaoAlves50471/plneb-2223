@@ -1,0 +1,1 @@
+Resolução do TPC7 que consistiu através de componentes do Bootstrap em melhorar a estética e funcionalidade da página referente aos termos.
