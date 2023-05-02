@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="container mt-5 mb-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header bg-dark text-light">
+          <h3 class="text-center mb-0">{{designation}}</h3>
+        </div>
+        <div class="card-body">
+          <p class="card-text"><strong>Description:</strong> {{value["des"]}}</p>
+          <hr>
+          <p class="card-text"><strong>EN:</strong> {{value["en"]}}</p>
+          <a href="/terms" class="btn btn-dark">Back to Terms</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
