@@ -7,7 +7,7 @@ html = requests.get(url).text
 soup = BeautifulSoup(html, "html.parser")
 
 divs = soup.find_all("div", class_="views-row")
-
+print(divs)
 lista=[]
 for div in divs:
     title = div.div.h3.a.text
